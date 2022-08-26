@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- tarjeta informacion de un trabajador con foto, nombre y opcion  de valorar dando una puntuacion, también opcion de texto para la persona que vaaya a deja la valoración -->
+    <div class="contenido">
+        <div class="tarjeta">
+            
+            <!-- parte superior con imagen del trabajador y fondo coloreado -->
+            <div class="contenido__superior">
+               
+                <!-- imagen trabajador -->
+                <div class="superior__imagen">
+                    <img src="persona1.png" alt="iamgen empleado" class="imagen">
+                </div>
+            </div>
+            <div class="contenido__inferior">
+               
+                <!-- contenido inferior con información del trabajador, plugin de valoracion, texto opcional y boton para enviar su valoracion -->                
+                <div class="inferior__informacion">
+                    <h3 class="informacion__nombre"><b><u>Empleado uno </u></b></h3>
+                    <h6 class="informacion__departamento"><i>Departamento incógnito</i></h6>
+                </div>
+                <div class="inferior_valoracion">
+                    <!-- form para la valoracion -->
+                      <form>
+                        <p class="clasificacion">
+                          <input id="radio1" type="radio" name="estrellas" value="10">
+                          <label for="radio1">★</label>
+                          <!-- <label for="radio1">💖</label> -->
+                          <input id="radio2" type="radio" name="estrellas" value="9">
+                          <label for="radio2">★</label>
+                          <!-- <label for="radio2">😁</label> -->
+                          <input id="radio3" type="radio" name="estrellas" value="8">
+                          <label for="radio3">★</label>
+                          <!-- <label for="radio3">😃</label> -->
+                          <input id="radio4" type="radio" name="estrellas" value="7">
+                          <label for="radio4">★</label>
+                          <!-- <label for="radio4">😊</label> -->
+                          <input id="radio5" type="radio" name="estrellas" value="6">
+                          <label for="radio5">★</label>
+                          <!-- <label for="radio5">😐</label> -->
+                          <input id="radio6" type="radio" name="estrellas" value="5">
+                          <label for="radio6">★</label>
+                          <!-- <label for="radio6">😑</label> -->
+                          <input id="radio7" type="radio" name="estrellas" value="4">
+                          <label for="radio7">★</label>
+                          <!-- <label for="radio7">😒</label> -->
+                          <input id="radio8" type="radio" name="estrellas" value="3">
+                          <label for="radio8">★</label>
+                          <!-- <label for="radio8">😠</label> -->
+                          <input id="radio9" type="radio" name="estrellas" value="2">
+                          <label for="radio9">★</label>
+                          <!-- <label for="radio9">😠</label> -->
+                          <input id="radio10" type="radio" name="estrellas" value="1">
+                          <label for="radio10">★</label>
+                          <!-- <label for="radio10">😡</label> -->
+                        </p>
+                      </form>
+                </div>
+                <div class="inferior__texto">
+                    <!-- texto opcional explicativo de la valoracion -->
+                    <textarea name="texto" id="texto_explicativo" cols="" rows="" placeholder="Agradeceríamos una breve explicación de la valoración que ha proporcionado, gracias por tu tiempo."></textarea>
+
+                    <!-- boton enviar valoracion -->
+                    <button class="btn_valorar">Enviar valoración!</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
